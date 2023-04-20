@@ -9,7 +9,6 @@ import Tooltip from "./kit/Tooltip";
 import Dropdown, { DropdownItem } from "./kit/Dropdown";
 import Icon from "./Icon";
 import EngineIcon from "./EngineIcon";
-import LocaleSwitch from "./LocaleSwitch";
 import DarkModeSwitch from "./DarkModeSwitch";
 import CreateConnectionModal from "./CreateConnectionModal";
 import SettingModal from "./SettingModal";
@@ -206,7 +205,6 @@ const ConnectionSidebar = () => {
             </div>
             <div className="w-full flex flex-col justify-end items-center">
               <DarkModeSwitch />
-              <LocaleSwitch />
               <Tooltip title={t("common.setting")} side="right">
                 <button
                   className=" w-10 h-10 p-1 rounded-full flex flex-row justify-center items-center hover:bg-gray-100 dark:hover:bg-zinc-700"
@@ -293,7 +291,7 @@ const ConnectionSidebar = () => {
             {/* <div className="sticky bottom-0 w-full flex justify-center bg-gray-100 dark:bg-zinc-700  backdrop-blur bg-opacity-60 pb-6 py-2">
               <a
                 href="https://discord.gg/z6kakemDjm"
-                className="text-indigo-600 dark:text-indigo-400 text-sm font-medium flex flex-row justify-center items-center hover:underline"
+                className="text-indigo-600 dark:text-indigo-400 text-sm font-medium flex flex-row justify-center items-center mt-4 hover:underline"
                 target="_blank"
               >
                 <Icon.BsDiscord className="w-4 h-auto mr-1" />
